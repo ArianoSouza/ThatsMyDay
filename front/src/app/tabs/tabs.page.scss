@@ -1,1 +1,34 @@
+ion-tab-bar{
+    width: 80%;
+    align-self: center;
+    margin-bottom: 1vh;
+    border-radius: 10px;
+    overflow: visible !important;
+    contain: none;
+    background-color: #E7A977;
+    justify-content: space-evenly;
+    --ion-tab-button-width: 5px;
+    height: 6vh;
+}
+
+ion-tab-button{
+    --color: var(--ion-tab-bar-color, #0B0B32);
+    background: none;
+    --color-selected: white;
+    transition: 0.3s;  
+    width: 20%;
+    flex: 0 0 auto;
+}
+ion-tab-button.tab-selected{
+   height: 8vh;
+   width: 30%;
+   transition: 0.3s;
+    margin-bottom: 5vh;
+    background: #0B0B32;
+    border-radius: 15px;
+}
+
+
+
+
 
