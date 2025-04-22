@@ -1,13 +1,33 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Tab 1
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+
 
 <ion-content [fullscreen]="true">
-  teste
+  
+<h1>Bem vindo, Ariano!</h1>
 
-  <app-explore-container name="Tab 1 page"></app-explore-container>
+<div class="container-button">
+  <ion-button class="fast-buttons" (click)="goToNewActivitie()">
+    <ion-icon name="play-forward"></ion-icon>
+  </ion-button>
+  <ion-label>Próxima atividade</ion-label>
+</div>
+<div class="container-day-activities" >
+  <h2>Atividades do dia</h2>
+  <div *ngFor="let activitie of activities" style="width: 100%; display: flex; justify-content: center;">
+    <ng-container *ngIf="activities.length !== 0; else noactivities" >
+      <ion-button>
+        <div class="button-organize">
+          <h1>{{activitie.name}}</h1>
+          <p>{{timeToShow(activitie.startTime,calculateTimeSpend(activitie.startTime,activitie.spend))}}</p>
+          <p>{{activitie.type}}</p>
+        </div>
+      </ion-button>
+    </ng-container>
+    
+    <ng-template #noactivities>
+      <ion-item>Não há atividades!</ion-item>
+    </ng-template>
+  </div>
+</div>
+
+
 </ion-content>

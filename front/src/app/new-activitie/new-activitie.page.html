@@ -1,0 +1,43 @@
+
+<ion-content class="nova-atividade">
+  <div class="container">
+    <h1>ADICIONAR ATIVIDADE</h1>
+    
+
+    <ion-item lines="none">
+      <ion-input placeholder="Digite o título" type="text" fill="outline"  label="Nome" label-placement="floating"></ion-input>
+    </ion-item>
+
+    <ion-item lines="none">
+      <ion-select placeholder="Selecionar tipo" fill="outline"  label="Tipo" label-placement="floating">
+        <ion-select-option value="estudo">Estudo</ion-select-option>
+        <ion-select-option value="trabalho">Trabalho</ion-select-option>
+        <ion-select-option value="lazer">Lazer</ion-select-option>
+      </ion-select>
+    </ion-item>
+
+    <div class="inline-inputs">
+      <ion-item lines="none">
+        <ion-select placeholder="Selecionar" fill="outline"  label="Horário" label-placement="floating">
+          <ion-select-option value="08:00">08:00</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item lines="none">
+        <ion-select placeholder="Selecionar" fill="outline"  label="Tempo" label-placement="floating">
+          <ion-select-option value="30">30 min</ion-select-option>
+        </ion-select>
+      </ion-item>
+    </div>
+
+
+      <ion-checkbox slot="start" labelPlacement="end">Avisar quando estiver na hora</ion-checkbox>
+      <ion-checkbox alignment="center" labelPlacement="end">Salvar como modelo</ion-checkbox>
+  
+
+
+    <ion-button expand="block" class="btn-salvar">Salvar</ion-button>
+    <ion-button expand="block" class="btn-cancelar">Cancelar</ion-button>
+  </div>
+</ion-content>
+

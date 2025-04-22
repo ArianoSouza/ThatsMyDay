@@ -1,0 +1,70 @@
+<ion-content class="ion-padding">
+  <div class="area"></div>
+  
+ 
+  <ul class="circles">
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+  </ul>
+
+  <div class="login-container">
+    <div class="logo-container fade-from-top">
+      <lord-icon
+        src="https://cdn.lordicon.com/warimioc.json"
+        trigger="loop"
+        delay="2000"
+        stroke="bold"
+        colors="primary:#0b0b32,secondary:#e7a977"
+        style="width:100px;height:100px">
+      </lord-icon>
+      <h1 class="logo">THAT'S<br>MYDAY</h1>
+    </div>
+
+    <form class="login-form" >
+      <ion-item class="form-item fade-from-left" lines="none">
+        <ion-input name="email" [(ngModel)]="email" type="email" fill="outline"  label="Email ou nome de usuário" label-placement="floating" ></ion-input>
+      </ion-item>
+      <div *ngIf="errorEmail" class="error">{{ errorEmail }}</div>
+
+      <ion-item class="form-item fade-from-left">
+        <ion-input name="password" [(ngModel)]="password" type="password" fill="outline" label="Senha" label-placement="floating" class="input-password" ></ion-input>
+        <ion-button expand="block" class="login-button" (click)="onLogin()">
+          <lord-icon
+            src="https://cdn.lordicon.com/vduvxizq.json"
+            trigger="hover"
+            colors="primary:#ffffff"
+            style="width:35px;height:35px">
+          </lord-icon>
+        </ion-button>
+      </ion-item>
+      <div *ngIf="errorPassword" class="error">{{ errorPassword }}</div>
+
+      
+
+      <div class="divider fade-from-bottom">
+        <span class="divider-line"></span>
+        <span class="divider-text">ou</span>
+        <span class="divider-line"></span>
+      </div>
+
+      <ion-button expand="block" fill="outline" class="google-button fade-from-bottom">
+        <ion-icon slot="start" name="logo-google"></ion-icon>
+        Entrar com o google
+      </ion-button>
+
+      <div class="links-container fade-from-bottom">
+        <p>Esqueceu sua senha? <a class="link">Redefinir senha</a></p>
+        <p>Não possui conta? <a class="link">Realizar cadastro</a></p>
+      </div>
+    </form>
+  </div>
+  
+</ion-content>

@@ -1,0 +1,93 @@
+.nova-atividade {
+  --background: #f2f2f2;
+
+  .container {
+    padding: 20px;
+    color: #0e0b2b;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+  }
+
+  h1 {
+    font-family: amatic;
+    font-size: 28px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 0;
+    font-size: 60px;
+    margin-top: 10vh;
+    margin-bottom: 3vh;
+  }
+
+  ion-item {
+    width: 100%;
+    --background: none;
+    overflow: visible;
+  }
+  ion-input{
+    --border-color: #0B0B32;
+    --highlight-color-focused: #0B0B32;
+    --color:#0B0B32;
+  }
+  ion-select{
+    --border-color: #0B0B32;
+    --highlight-color-focused: #0B0B32;
+    margin-top: 10px;
+  }
+
+  ion-label {
+    font-weight: bold;
+    color: #0e0b2b;
+  }
+
+  .inline-inputs {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    width: 100%;
+
+    ion-item {
+      flex: 1;
+    }
+  }
+
+  ion-checkbox {
+    margin-right: 10px;
+    --checkbox-background: white;
+    --border-color: #0e0b2b;
+    --checkmark-color: #0e0b2b;
+    --checkbox-background-checked:var(--background);
+    --border-color-checked:#0e0b2b;
+    height: 20px;
+    margin-top: 10px;
+  }
+
+  .check-box{
+    height: 20px;
+  }
+
+  .btn-salvar {
+    width: 50%;
+    --background: #0e0b2b;
+    color: white;
+    font-weight: bold;
+    border-radius: 12px;
+    margin-top: 20px;
+    height: 45px;
+    --border-radius: 10px
+  }
+  .btn-cancelar {
+    border: 2px solid #0B0B32;
+    width: 50%;
+    --background: white;
+    color: #0e0b2b;
+    font-weight: bold;
+    border-radius: 12px;
+    margin-top: 5px;
+    height: 45px;
+    --border-radius: 10px
+  }
+}
